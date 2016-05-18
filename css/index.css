@@ -1,0 +1,1029 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+}
+
+ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, table, tr, td, ins, hr {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background: #333;
+}
+
+.box {
+    width: 980px;
+    margin: 0 auto;
+    background: #333;
+    font-size: 12px;
+}
+
+.box .header_left_logo {
+    position: relative;
+    display: block;
+    float: left;
+    padding: 5px 20px 5px 0;
+    width: 245px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.box .header_left_logo .logo_link {
+    float: left;
+    padding-right: 0;
+    width: 110px;
+    height: 40px;
+    position: relative;
+}
+
+.box .header_left_logo .change_city {
+    position: absolute;
+    display: inline-block;
+    float: left;
+    height: 22px;
+    line-height: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
+    color: #ccc;
+    border-left: 1px solid #5c5d61;
+    font-size: 12px;
+    font-family: Tahoma, "\5b8b\4f53", Arial, Helvetica, Arial, sans-serif;;
+    padding-right: 30px;
+    text-decoration: none;
+    outline: 0;
+}
+
+.box .header_left_logo .change_city b {
+    display: inline-block;
+    margin-top: -3px;
+    font-weight: 400;
+}
+
+.box .header_left_logo .change_city label {
+    margin-top: -3px;
+    width: 73px;
+    color: #999;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+}
+.header-city-select{
+    top:50px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,2);
+    border-bottom: 1px solid #d6d5d8;
+}
+.header-city-select .wrap{
+    padding: 13px 0;
+    line-height: 40px;
+    background: #fff;
+}
+.header-city-select .wrap ul{
+    width: 980px;
+    height: 16px;
+    padding-left: 300px;
+}
+.header-city-select .wrap li{
+    float: left;
+    padding: 0 18px;
+    line-height: 15px;
+    border-right: 1px dotted #999;
+    text-decoration: none;
+    outline: 0;
+}
+.header-city-select .wrap li.active a{
+    color: #f50;
+}
+.header-city-select .wrap li a{
+    font-size: 14px;
+    color: #5c5d61;
+    text-decoration: none;
+    outline: 0;
+}
+.box .nav {
+    float: left;
+    line-height: 50px;
+    display: block;
+
+}
+
+.box .nav li {
+    float: left;
+    display: list-item;
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box .nav li a {
+    display: block;
+    padding: 0 20px;
+    font-size: 14px;
+    font-family: Tahoma, "\5b8b\4f53", Arial, Helvetica, Arial, sans-serif;
+    color: #ccc;
+    text-decoration: none;
+    outline: 0;
+}
+.bg{
+    background: #3689b3 !important;
+    color: white !important;
+}
+.box .nav li a:hover{
+    color: white;
+    background: #ccc;
+}
+.box .header_right {
+    position: relative;
+    height: 50px;
+    float: right;
+    color: #999;
+}
+
+.box .header_right span {
+    display: inline-block;
+    margin-top: 17px;
+    padding-left: 10px;
+    position: absolute;
+    height: 16px;
+    width: 1px;
+    border-left: 1px #999999 dotted;
+}
+
+.box .header_right a {
+    float: left;
+    margin: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.box .header_right a:hover{
+    color: white;
+}
+.home {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 310px;
+    position: relative;
+    margin-top: -20px;
+    display: block;
+    overflow: hidden;
+}
+
+.banner .bannerInner {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .bannerInner div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.banner .bannerInner img {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.banner .bannerTip {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+}
+
+.banner .bannerTip li {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #666;
+    opacity: 0.6;
+}
+
+.banner .bannerTip li.bg {
+    background: red;
+}
+
+/*搜索框*/
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    margin: 0 auto;
+    font-size: 14px;
+    top: 30px;
+}
+
+.container .search {
+    display: block;
+    height: 155px;
+}
+
+.container .search .warp_search {
+    font-size: 14px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 980px;
+    height: 98px;
+    display: block;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.container .search .search_left {
+    margin: 0 0 18px;
+    display: block;
+}
+
+.search_form {
+    position: relative;
+    display: block;
+    float: left;
+    width: 650px;
+    height: 24px;
+    padding: 9px;
+    border: 2px solid #d9d9d9;
+    background-color: white;
+    border-right: 0;
+    border-radius: 2px 0 0 2px;
+    overflow: hidden;
+}
+
+.input_main {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    padding: 1px 0;
+    font-size: 16px;
+    color: #999;
+}
+.input_main input{
+    width: 300px;
+    outline: none;
+}
+.search_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 12px;
+    width: 86px;
+    height: 46px;
+    line-height: 42px;
+    background-color: #3d9ccc;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.search_btn button {
+    padding: 1px 6px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: white;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.container .search .search_left .search_link {
+    float: left;
+    line-height: 34px;
+}
+
+.container .search .search_left .search_link a {
+    margin-right: 15px;
+    float: left;
+    color: #999;
+    text-decoration: none;
+    outline: 0;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei', Tahoma, "\5b8b\4f53", Arial, Helvetica, Arial, sans-serif;
+}
+.container .search .search_left .search_link a:hover{
+    color: #f90;
+}
+
+.container .search .search-right {
+    width: 290px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 180px;
+    height: 26px;
+    padding: 9px 0;
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    background: #f6f6f6;
+    line-height: 28px;
+    color: #999;
+    font-size: 16px;
+    font-family: 'Microsoft Yahei', Tahoma, "\5b8b\4f53", Arial, Helvetica, Arial, sans-serif;;
+}
+
+.container .search .search-right span {
+    height: 26px;
+    display: inline-block;
+    padding: 0 6px;
+    border: 1px solid #f2f2f2;
+    line-height: 26px;
+    background: white;
+    vertical-align: top;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Microsoft Yahei', Tahoma, "\5b8b\4f53", Arial, Helvetica, Arial, sans-serif;;
+}
+
+.container .wrap {
+    position: absolute;
+    width: 980px;
+    height: 40px;
+    display: block;
+    line-height: 20px;
+    margin-left: 175px;
+    font-size: 12px;
+    overflow: hidden;
+}
+.subsit-btn{
+    overflow: hidden;
+}
+.container .subsit-btn a {
+    float: left;
+    display: block;
+    padding: 0 40px;
+    padding-left: 50px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 0;
+    position: relative;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    /*font-family:  'Microsoft Yahei', Tahoma, 宋体, Arial, Helvetica, Arial, sans-serif;*/
+    text-decoration: none;
+    outline: 0;
+    color: #666;
+    border-right: #999999 dashed 1px;
+}
+.container .subsit-btn a:hover{
+    color: white;
+}
+.tupian1{
+    background: url("../img/tupian1.png")no-repeat 20px center;
+}
+.tupian2{
+    background: url("../img/tupian2.png")no-repeat 20px 8px;
+}
+.tupian3{
+    background: url("../img/tupian3.png")no-repeat 20px 8px;
+}
+.tupian4{
+    background: url("../img/tupian4.png")no-repeat 20px 8px;
+}
+.tupian5{
+    background: url("../img/tupian5.png")no-repeat 20px 8px;
+}
+.tupian6{
+    background: url("../img/tupian6.png")no-repeat 20px 8px;
+}
+.tupian1:hover{
+    background: url("../img/tupian11.png")no-repeat 20px center #ffaa00;
+}
+.tupian2:hover{
+    background: url("../img/tupian22.png")no-repeat 20px 8px #ffaa00;
+}
+.tupian3:hover{
+    background: url("../img/tupian33.png")no-repeat 20px 8px #ffaa00;
+}
+.tupian4:hover{
+    background: url("../img/tupian44.png")no-repeat 20px 8px #ffaa00;
+}
+.tupian5:hover{
+    background: url("../img/tupian55.png")no-repeat 20px 8px #ffaa00;
+}
+.tupian6:hover{
+    background: url("../img/tupian66.png")no-repeat 20px 8px #ffaa00;
+}
+/*行业职位*/
+.container .hangye{
+    display: block;
+    width: 980px;
+    margin: auto;
+    height: 3014px;
+    line-height: 20px;
+
+}
+.container .hangye .hangye_IT,.hangye_banking,.hangye_car,.hangye_house,.hangye_medicare,.hangye_product{
+    display: block;
+    height: 356px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.container .hangye .hangye_IT .left-part {
+    border-top:5px solid #3ca2f2;
+}
+.container .hangye .hangye_IT h3 a {
+    color:#3ca2f2;
+}
+.container .hangye .hangye_house .left-part{
+    border-top:5px solid #ef434c;
+}
+.container .hangye .hangye_house h3 a {
+    color:#ef434c;
+}
+.container .hangye .hangye_banking .left-part{
+    border-top:5px solid #fdc00f;
+}
+.container .hangye .hangye_banking h3 a{
+    color:#fdc00f ;
+}
+.container .hangye .hangye_product .left-part{
+    border-top:5px solid #6f4ab9;
+}
+.container .hangye .hangye_product h3 a{
+    color:#6f4ab9 ;
+}
+.container .hangye .hangye_car .left-part{
+    border-top:5px solid #0267f5;
+}
+.container .hangye .hangye_car h3 a{
+    color:#0267f5 ;
+}
+.container .hangye .hangye_medicare .left-part{
+    border-top:5px solid #50b26b;
+}
+.container .hangye .hangye_medicare h3 a{
+    color:#50b26b ;
+}
+.container .hangye  .left-part{
+    background-color: #f5f5f5;
+    width: 204px;
+    height: 353px;
+    padding: 0 23px;
+    float: left;
+}
+.container .hangye .left-part h3{
+    display: block;
+    font-weight: 400;
+    font-size: 24.5px;
+    line-height: 40px;
+    margin: 10px 0;
+    font-family:
+    'Microsoft Yahei', Tahoma, 宋体, Arial, Helvetica, Arial, sans-serif;
+}
+.container .hangye .left-part h3 a{
+    /*color: #3ca2f2;*/
+    text-decoration: none;
+    cursor: auto;
+}
+.container .hangye .left-part .job{
+    height: 120px;
+    border-top: 1px dotted #cfd2e2;
+    padding: 8px 0;
+    overflow: hidden;
+
+}
+.container .hangye .left-part .job a{
+    min-width: 95px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 31px;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    outline: 0;
+    font-family: 'Microsoft Yahei',Tahoma,"\5b8b\4f53",Arial,Helvetica,Arial,sans-serif;;
+}
+.container .hangye .left-part .job a:hover{
+    color: #f90;
+}
+.container .hangye .left-part .companies{
+    width: 204px;
+    height: 60px;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px dotted #cfd2e2;
+    padding: 8px 0;
+    overflow: hidden;
+}
+.container .hangye .left-part .companies a{
+    min-width: 64px;
+    display: inline-block;
+    line-height: 31px;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    outline: 0;
+    font-family: 'Microsoft Yahei',Tahoma,"\5b8b\4f53",Arial,Helvetica,Arial,sans-serif;;
+}
+.container .hangye .left-part .btn-enter{
+    display: block;
+    margin-top: 12px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #ccc;
+    color: #f50;
+    text-decoration: none;
+    outline: 0;
+
+}
+
+
+.container .hangye .right-part{
+    display: block;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-left: none;
+    overflow: hidden;
+}
+.container .hangye .right-part li{
+    position: relative;
+    width: 337px;
+    height: 60px;
+    padding: 15px 17px 14px 10px;
+    float: left;
+    margin-top: -1px;
+    border-top: 1px solid #f5f5f5;
+}
+
+.container .hangye .right-part li .company-logo{
+    float: left;
+    margin-left: 10px;
+    margin-top: 4px;
+    color: #666;
+    text-decoration: none;
+}
+.tinyELogo{
+    width: 100px;
+    height: 50px;
+}
+.container .hangye .right-part li .job-detail{
+    position: absolute;
+    float: right;
+    margin-left: 145px;
+    display: block;
+    width: 192px;
+    height: 60px;
+    text-align: left;
+
+}
+.container .hangye .right-part li .job-detail .job-title a{
+    color: #0077b3;
+    font-size: 16px;
+    font-family: 'Microsoft Yahei',Tahoma,"\5b8b\4f53",Arial,Helvetica,Arial,sans-serif;
+    display: block;
+    width: 190px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    outline: 0;
+}
+.container .hangye .right-part li .job-detail .job-title a:hover{
+    text-decoration: underline;
+}
+
+.container .hangye .right-part li .job-detail .job-salary{
+    color: #ee5f03;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family:  'Microsoft Yahei',Tahoma,"\5b8b\4f53",Arial,Helvetica,Arial,sans-serif;;
+}
+.container .hangye .right-part li .job-detail .job-salary em{
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    float: left;
+    text-align: left;
+}
+
+.container .hangye .right-part li .job-detail .job-salary span{
+    color: #666;
+    font-size: 12px;
+    margin-left: 8px;
+}
+.container .hangye .right-part li .job-detail .company-name{
+    width: 190px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    text-align: left;
+}
+.container .hangye .right-part li .job-detail .company-name a{
+    width: 190px;
+    height: 20px;
+    color: #999;
+    font-size: 12px;
+    display: block;
+    text-decoration: none;
+    outline: 0;
+}
+.container .hangye .right-part li .job-detail .company-name a:hover{
+    text-decoration: underline;
+}
+
+.seo-after{
+    display: block;
+    width: 980px;
+    height: 668px;
+}
+.hot-title{
+    height: 42px;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size:24.5px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.job-box{
+    display: block;
+    position: relative;
+}
+.hot-title span{
+    display: inline-block;
+    width: 244px;
+    border-left: 5px solid #ff5600;
+    font-size: 22px;
+    color: #4f5364;
+    padding-left: 18px;
+}
+.job-box .hot-job{
+    display: block;
+    background-color: #f5f5f5;
+    width: 252px;
+    float: left;
+}
+.job-box .hot-job li{
+    line-height: 36px;
+    padding: 4px 0 4px 7px;
+    display: list-item;
+}
+.job-box .hot-job li .indus-title{
+    display: block;
+    font-size: 16px;
+    color: #4f5364;
+    padding-left: 24px;
+    position: relative;
+    width: 222px;
+    text-decoration: none;
+    outline: 0;
+}
+.job-box .hot-job li .sub-nav{
+    position: absolute;
+    left: 252px;
+    bottom: 0;
+    width: 646px;
+    height:104px;
+    background-color: #fff;
+    border:1px solid #eee;
+    overflow: auto;
+    padding: 40px 40px 0;
+    display: none;
+    z-index: 1;
+
+}
+.job-box .company-jobs{
+    display: block;
+    width: 728px;
+    float: right;
+}
+.job-box .company-jobs li{
+    width: 222px;
+    height: 176px;
+    margin-left: 20px;
+    margin-bottom: 29px;
+    float: left;
+    text-align: left;
+    display: list-item;
+}
+.job-box .company-jobs li .famous-logo{
+    border: 1px solid #d7d7d7;
+    margin-bottom: 18px;
+    padding: 15px 30px;
+    display: block;
+}
+.job-box .company-jobs li .job-name{
+    color: #999;
+    line-height: 17px;
+    font-size: 14px;
+    display: block;
+}
+.job-box .company-jobs li .job-name .normalELogo{
+    width: 160px;
+    height: 80px;
+}
+.job-box .company-jobs li .job-name span{
+    color: #0077b3;
+    display: inline-block;
+    width: 140px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+.job-box .company-jobs li .job-name  a:hover span{
+    text-decoration: underline;
+}
+.job-box .company-jobs li .job-name em{
+    float: right;
+    text-align: right;
+    width: 77px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-style: normal;
+}
+
+.other{
+    padding: 30px 0;
+    display: block;
+    width: 980px;
+    margin: auto;
+}
+.links{
+    display: block;
+    color: #999;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    margin-right: -442.5px;
+    width: 980px;
+
+    line-height: 20px;
+}
+.links .links-wrap{
+    border-top:1px solid #d2d2d2;
+    margin-bottom: 0;
+    padding:14px 0;
+    line-height: 26px;
+    display: inline-block;
+
+}
+.links .links-title{
+    font-size: 12px;
+    width: 60px;
+    white-space: nowrap;
+    font-weight: 700;
+    float: left;
+    text-decoration: none;
+}
+
+.links .links-content{
+    width: 910px;
+    float: right;
+}
+.links .links-content a{
+    font-size: 12px;
+    float: left;
+    margin-right: 10px;
+    white-space: nowrap;
+    text-decoration: none;
+    outline: 0;
+    color: #999;
+    text-align: center;
+}
+.links .links-content a:hover{
+    color: #f90;
+}
+
+/*底部*/
+.footer-p{
+    margin-top: 20px;
+    overflow: hidden;
+    display: block;
+}
+.footer-p hr{
+    margin: 5px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    box-sizing: content-box;
+    height: 0;
+}
+.footer-p .wrap{
+    position: relative;
+    width: 980px;
+    height: 143px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: 'Microsoft Yahei', Tahoma, 宋体, Arial, Helvetica, A;
+}
+.footer-p .wrap .copyright{
+    height: 128px;
+    color: #999;
+    line-height: 22px;
+    margin-top: 15px;
+    display: block;
+
+}
+.footer-p .wrap .copyright .copy-side{
+    float: left;
+    width: 160px;
+    height: 78px;
+    font-size: 14px;
+    padding-top: 50px;
+    text-align: center;
+    line-height: 25px;
+    background: url("../img/footer-contact-icon_9a7bacf9.png") center top no-repeat;
+}
+.copy-side strong{
+    font-size: 20px;
+    font-weight: 400;
+}
+.footer-p .wrap .copyright .copy-side small{
+    font-size: 85%;
+    font-size: 12px;
+}
+.footer-p .wrap .copyright .copy-main{
+    margin-left: 170px;
+    margin-right: -20px;
+}
+.footer-p .wrap .copyright .copy-main .item{
+    float: left;
+    height: 128px;
+    padding: 0 40px;
+    border-left: 1px dotted #d2d2d2;
+}
+.footer-p .wrap .copyright .copy-main .item dl dt{
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+    display: block;
+}
+.footer-p .wrap .copyright .copy-main .item dl dd{
+    margin-left: 0;
+    display: block;
+
+
+}
+.footer-p .wrap .copyright a{
+    color: #999;
+    text-decoration: none;
+    outline: 0;
+}
+.footer-p .wrap .copyright .copy-main .item-weibo{
+    display: block;
+    width: 62px;
+    height: 128px;
+    text-align: center;
+    color: #666;
+    padding: 0 25px;
+    float: left;
+
+}
+.footer-p .wrap .copyright .copy-main .item-weibo .weibo{
+    display: inline-block;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    background:url("../img/footer-weibo-icon_b22b1824.png")0 0 no-repeat;
+}
+.footer-p .wrap .copyright .copy-main .item-weibo a.btn-sina{
+    display: inline-block;
+    vertical-align: middle;
+    width: 62px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 10px;
+    background: url("../img/footer-sina-icon_c6fbbce7.png") 0 0 no-repeat;
+}
+.footer-p .wrap .copyright .copy-main .item-apps{
+    text-align: center;
+    color: #666;
+    padding: 0 25px;
+
+}
+.footer-p .wrap .copyright .copy-main .item-apps .mishu{
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 78px;
+    height: 78px;
+    line-height: 78px;
+    background: url("../img/icon-mishu_25bf7e1b.png")no-repeat;
+}
+
+.copy-footer{
+    width: 100%;
+    position: absolute;
+    clear: both;
+    height: 40px;
+    background: #f6f6f6;
+    margin-top: 20px;
+    padding: 20px 0;
+    color: #999;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    font-family: 'Microsoft Yahei',Tahoma,"\5b8b\4f53",Arial,Helvetica,Arial,sans-serif;
+    line-height: 20px;
+}
+.copy-footer p{
+    margin: 0;
+    display: block;
+}
+
+.fixed-aside{
+    /*position: fixed;*/
+    bottom: 15%;
+    left: 500px;
+    margin-left: 50%;
+    width: 42px;
+    display: block;
+}
+.fixed-aside .fixed-go-top{
+    height: 32px;
+    width: 32px;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #5e5e5e;
+    overflow: hidden;
+    margin-bottom: 3px;
+    line-height: normal;
+    font-size: 12px;
+    display: block;
+}
+.fixed-aside .fixed-go-top a{
+    text-decoration: none;
+}
+.icon32-gotop{
+    background-position: 0 0;
+    width: 32px;
+    height: 32px;
+    margin-top: 1px;
+    margin-right: 3em;
+    line-height: 16px;
+    vertical-align: text-top;
+    background-image: url("../img/icon-32_e46b3ba3.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.fixed-aside  a.text-go-top{
+    color: #fff;
+    line-height: 1.3em;
+}
+.fixed-aside .fixed-feed-back{
+    height: 32px;
+    width: 32px;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #5e5e5e;
+    overflow: hidden;
+    margin-bottom: 3px;
+    line-height: normal;
+    font-size: 12px;
+    display: block;
+}
+.fixed-aside .fixed-feed-back a{
+    text-decoration: none;
+}
+.icon32-feedback{
+    background-position: 0 -32px;
+    width: 32px;
+    height: 32px;
+    margin-top: 1px;
+    margin-right: 3em;
+    line-height: 16px;
+    vertical-align: text-top;
+    background-image: url("../img/icon-32_e46b3ba3.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.fixed-aside  a.fixed-feed-back{
+    color: #fff;
+    line-height: 1.3em;
+}

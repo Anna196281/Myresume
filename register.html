@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>猎聘网 - 中高端人才求职、找工作，首选招聘平台！</title>
+    <link rel="stylesheet" href="css/register.css" type="text/css"/>
+    <style type="text/css">
+        .suggest-box{
+
+            position: relative;
+            margin-right: 138px;
+            width: 458px;
+        }
+        .suggest-box .suggest{
+            width: 100%;
+            position: absolute;
+            top:39px;
+            left: -2px;
+            z-index: 5;
+        }
+        .suggest-box .suggest ul{
+            display: none;
+            border: 1px solid #d2d2d2;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .suggest-box .suggest ul li,.suggest-box .suggest ul li a{
+            line-height: 32px;
+            font-size: 16px;
+            color: #666;
+        }
+        .suggest-box .suggest ul li a{
+            padding-left:20px;
+        }
+        .suggest-box .suggest ul li:hover{
+            background:#ffe470;
+        }
+        .suggest-box .suggest ul li a:hover{
+            color: #ef8c00;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div class="box">
+    <div class="header_left_logo" >
+        <a href="http://localhost:63342/WebstormProjects/untitled/%E5%AE%9E%E6%88%98/%E7%8C%8E%E8%81%98%E7%BD%911/index.html" target="_blank" id="logo" >
+        <img src="img/logo_e062b0a3.png" alt=""  />
+            <em id="em">
+                <i class="icons16" title="首页"></i>
+            </em>
+        </a>
+    </div>
+    <div class="header_right">
+        <a href="https://passport.liepin.com/h/account/#sfrom=click-pc_homepage-front_navigation-hunter_new" id="lietou">我是猎头</a>
+        <a href="https://passport.liepin.com/e/account/#sfrom=click-pc_homepage-front_navigation-ecomphr_new" id="company">我是企业HR</a>
+        <span></span>
+        <a href="https://sns.liepin.com/tongdao-app/index.html?mscid=c_a1_050#sfrom=click-pc_homepage-front_navigation-mobile_new" id="phone">手机猎聘</a>
+    </div>
+</div>
+</div>
+<div class="background">
+    <div class="container">
+        <div class="side">
+            <form class="search_box">
+                <div class="input_main"><input type="text" id="searchInp" placeholder="输入职位搜索关键词，如'销售经理'"/></div>
+                <div class="search_btn"><button>猎聘一下</button></div>
+                <div class="suggest-box" >
+                    <div class="suggest">
+                        <ul id="searchList"  >
+                            <li><a href="javascript:;">android</a></li>
+                            <li><a href="javascript:;">android开发</a></li>
+                            <li><a href="javascript:;">android工程师</a></li>
+                            <li><a href="javascript:;">android开发工程师</a></li>
+                            <li><a href="javascript:;">android推广</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+            <div class="side_content" id="banner">
+                <div class="company_menu">
+                    <ul id="bannerTip">
+                        <li class="first_li">IT 互联网</li>
+                        <li>金融</li>
+                        <li>房地产</li>
+                        <li>消费品</li>
+                        <li>汽车制造</li>
+                        <li>医疗化工</li>
+                    </ul>
+                </div>
+
+                <div class="company_logo" id="bannerInner" >
+                </div>
+            </div>
+        </div>
+        <div class="register">
+            <h3>10秒注册，获得高薪</h3>
+            <div class="login-form">
+                <input type="text" id="userEmail" placeholder="请输入您常用邮箱"/>
+                <span id="spanEmail"></span>
+            </div>
+            <div class="login-form">
+                <input  type="password" id="password" placeholder="请输入密码"/>
+                <span id="spanPW"></span>
+            </div>
+            <div class="login-form">
+                <input class="text_code" id="code" type="text" placeholder="验证码"/>
+                <!--<a  class="code_btn" href="javascript:;" id="codeDiv"></a>-->
+                <div id="codeDiv" class="code_btn"></div>
+                <span id="spancode"></span>
+            </div>
+           <P id="submit" style="width: 310px; color:white;height: 60px;background: #ff9500; margin: auto; text-align: center;line-height: 60px; border-radius: 3px;font-size: 24px;cursor: pointer">免费注册</P>
+            <div class="login-form" style="margin-top: 10px">
+                <label><input type="checkbox" class="checkbox" style="vertical-align: middle"/></label><span class="accept">"我已阅读并同意"
+                    <a href="https://www.liepin.com/user/agreement.shtml">《用户服务协议》</a>
+                </span>
+            </div>
+                <p class="muted">已有账号直接<a  class="goLogin" href="javascript:; ">登录>> </a> </p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>京ICP备09083200号 京ICP证070419号 人才服务许可证:RC0710280 京公网安备11010502026763</p>
+    <p>Copyright©2000-2016 liepin.com All Rights Reserved</p>
+</div>
+
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/utils.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/tween.min.js"></script>
+<script type="text/javascript" src="js/jsonp.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
+</html>
